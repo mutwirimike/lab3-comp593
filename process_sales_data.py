@@ -29,9 +29,10 @@ def get_sales_csv_path():
     num_params = len(sys.argv) - 1
     if num_params < 1:
         print('Error: Missing path to sales data CSV file')
-        sys.exit(1)     
+        sys.exit (1)
     # TODO: Check whether provide parameter is valid path of file
     sales_csv_path = sys.argv[1]
+    
     if not os.path.isfile(sales_csv_path):
         print('Error: Invalid path to sales data CSV file')
         sys.exit(1)
